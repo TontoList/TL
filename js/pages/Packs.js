@@ -29,7 +29,7 @@ export default {
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
-                                <span class="type-label-lg">{{ tierNames[level.id] || level?.name || \`Error (\${err}.json)\` }}</span>
+                                <span class="type-label-lg">{{ packNameLookup[level.id] || level?.name || \`Error (\${err}.json)\` }}</span>
                             </button>
                         </td>
                     </tr>
