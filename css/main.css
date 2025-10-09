@@ -1,5 +1,5 @@
 :root {
-    --color-background: white;
+    --color-background: linear-gradient(to right, white, black);
     --color-on-background: black;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
@@ -12,7 +12,7 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: #1c1b1f;
+    --color-background: linear-gradient(to right, black, black);
     --color-on-background: white;
     --color-background-hover: #27262c;
     --color-on-background-hover: white;
@@ -36,7 +36,7 @@ body {
 
 header,
 main {
-    background-color: var(--color-background);
+    background-image: var(--color-background);
     color: var(--color-on-background);
     display: grid;
     grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(
