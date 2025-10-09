@@ -7,12 +7,5 @@
     "verification": "https://youtu.be/38lnpZSDpLQ",
     "percentToQualify": 100,
     "tontoscale": "65",
-    "records": [
-        {
-            "user": "",
-            "link": "",
-            "percent": 0,
-            "hz": 0
-        }
-    ]
+    "records": []
 }
