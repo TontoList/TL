@@ -100,6 +100,9 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
+                        The level must be capable of obtaining a proper scale rating within the Tonto Scale which ranges from 0 to 100.
+                    </p>
+                    <p>
                         Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
                     </p>
                     <p>
