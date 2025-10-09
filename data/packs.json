@@ -1,6 +1,6 @@
 [
-  {"name": "TestPack",
-   "levels": {
+  {"packname": "TestPack",
+   "packlevels": {
     "QueMalMomo"
     }
 }
