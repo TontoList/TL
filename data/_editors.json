@@ -1,27 +1,27 @@
 [
     {
         "role": "owner",
-        "name": "TontoMan aka donTonteria",
+        "name": "donTonteria",
         "link": "https://www.youtube.com/@donTonteria"
     },
     {
         "role": "admin",
-        "name": "List Admin",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "No Admins Bruh",
+        "link": "https://www.youtube.com/@donTonteria"
     },
     {
         "role": "helper",
-        "name": "List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "No Helpers Bruh",
+        "link": "https://www.youtube.com/@donTonteria"
     },
     {
         "role": "trial",
-        "name": "Trial List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "No Helpers Bruh",
+        "link": "https://www.youtube.com/@donTonteria"
     },
     {
         "role": "dev",
-        "name": "List Coder",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "donTonteria",
+        "link": "https://www.youtube.com/@donTonteria"
     }
 ]
