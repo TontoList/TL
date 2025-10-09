@@ -98,7 +98,7 @@ export default {
                             </li>
                         </ol>
                     </template>
-                    <h3>Submission Requirements</h3>
+                    <h3><u>Submission Requirements</u></h3>
                     <p>
                         The level must be capable of obtaining a proper scale rating within the Tonto Scale which ranges from 0 to 100.
                     </p>
