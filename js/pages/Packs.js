@@ -45,7 +45,6 @@ export default {
                             <div class="type-title-sm">Pack Points</div>
                             <p>{{ score(selected + 1, 100, level.percentToQualify) }}</p>
                         </li>
-                        <li>
                     </ul>
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
