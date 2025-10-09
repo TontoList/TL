@@ -4,7 +4,6 @@ import { round, score } from './score.js';
  * Path to directory containing `_list.json` and all levels
  */
 const dir = '/data';
-const pack = '/packs';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
@@ -105,61 +104,6 @@ export async function fetchLeaderboard() {
             });
         });
     });
-
-export async function fetchPacks() {
-    try {
-        // Fetch the JSON file inside the Packs folder
-        const response = await fetch(`${pack}/Packs.json`);
-
-        // Parse it as JSON
-        const tiers = await response.json();
-
-        // Verify it’s an array
-        if (!Array.isArray(tiers)) {
-            throw new Error("packtiers.json is not an array");
-        }
-
-        // Extract each tier's properties
-        const result = tiers.map(tier => ({
-            name: tier.tiername,
-            color: tier.tiercolor,
-            tierpacks: tier.tierpacks
-        }));
-
-        return result;
-    } catch (err) {
-        console.error("Failed to fetch tiers:", err);
-        return [];
-    }
-}
-
-export async function fetchTiers() {
-    try {
-        // Fetch the JSON file inside the Packs folder
-        const response = await fetch(`${pack}/PackTiers.json`);
-
-        // Parse it as JSON
-        const tiers = await response.json();
-
-        // Verify it’s an array
-        if (!Array.isArray(tiers)) {
-            throw new Error("packtiers.json is not an array");
-        }
-
-        // Extract each tier's properties
-        const result = tiers.map(tier => ({
-            name: tier.tiername,
-            color: tier.tiercolor,
-            tierpacks: tier.tierpacks
-        }));
-
-        return result;
-    } catch (err) {
-        console.error("Failed to fetch tiers:", err);
-        return [];
-    }
-}
-
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
