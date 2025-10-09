@@ -4,6 +4,7 @@ import { round, score } from './score.js';
  * Path to directory containing `_list.json` and all levels
  */
 const dir = '/data';
+const pack = '/packs';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
@@ -104,6 +105,33 @@ export async function fetchLeaderboard() {
             });
         });
     });
+
+export async function fetchPacks() {
+    try {
+        // Fetch the index file that lists all packs (e.g. /packs/_packs.json)
+        const packsResult = await fetch(`${pack}/_packs.json`);
+        const packsList = await packsResult.json();
+
+        // Loop through each listed pack and load its JSON file
+        const packs = await Promise.all(
+            packsList.map(async (path) => {
+                try {
+                    const packResult = await fetch(`${pack}/${path}.json`);
+                    const data = await packResult.json();
+                    return [data, null];
+                } catch {
+                    console.error(`Failed to load pack: ${path}`);
+                    return [null, path];
+                }
+            })
+        );
+
+        return packs;
+    } catch (err) {
+        console.error("Failed to load packs index:", err);
+        return null;
+    }
+}
 
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
