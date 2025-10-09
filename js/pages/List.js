@@ -51,7 +51,7 @@ export default {
                             <p>{{ level.id }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Password</div>
+                            <div class="type-title-sm">Tonto Scale</div>
                             <p>{{ level.tontoscale || '0' }}</p>
                         </li>
                     </ul>
