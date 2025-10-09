@@ -1,1 +1,7 @@
-aa
+{
+    "name": "Test Tier"
+    "color":
+    "packs": {
+      "TestPack"
+    }
+}
