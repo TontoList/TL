@@ -103,7 +103,7 @@ export default {
                         The level must be capable of obtaining a proper scale rating within the Tonto Scale which ranges from 0 to 100.
                     </p>
                     <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
+                        Achieved the record without using hacks (however, CBF and FPS bypass are both allowed (FPS Bypass up to 360fps)).
                     </p>
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
