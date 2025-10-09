@@ -52,7 +52,7 @@ export default {
                         </li>
                         <li>
                             <div class="type-title-sm">Password</div>
-                            <p>{{ level.password || 'Free to Copy' }}</p>
+                            <p>{{ level.tontoscale || '0' }}</p>
                         </li>
                     </ul>
                     <h2>Records</h2>
