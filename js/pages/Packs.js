@@ -1,7 +1,7 @@
 import { store } from "../main.js";
 import { embed } from "../util.js";
 import { score } from "../packscore.js";
-import { fetchPacks } from "../content.js";
+import { fetchPacks, fetchTiers } from "../content.js";
 
 import Spinner from "../components/Spinner.js";
 import LevelAuthors from "../components/List/LevelAuthors.js";
@@ -29,7 +29,7 @@ export default {
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
-                                <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
+                                <span class="type-label-lg">{{ tierNames[level.id] || level?.name || \`Error (\${err}.json)\` }}</span>
                             </button>
                         </td>
                     </tr>
