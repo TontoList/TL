@@ -1,5 +1,5 @@
 :root {
-    --color-background: linear-gradient(to right, white, black);
+    --color-background: linear-gradient(to right, white, gray);
     --color-on-background: black;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
