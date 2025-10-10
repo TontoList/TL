@@ -105,19 +105,19 @@ export default {
                     <p>
                         Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
                     </p>
-                    <p>
+                    <p style="padding: 10px; background-color: black; border-radius: 8px;">
                         Have either source audio or clicks/taps in the video. Edited audio only does not count
                     </p>
                     <p>
                         The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
                     </p>
-                    <p>
+                    <p style="padding: 10px; background-color: black; border-radius: 8px;">
                         The recording must also show the player hit the endwall, or the completion will be invalidated.
                     </p>
                     <p>
                         Do not use secret routes or bug routes
                     </p>
-                    <p>
+                    <p style="padding: 10px; background-color: black; border-radius: 8px;">
                         Do not use easy modes, only a record of the unmodified level qualifies
                     </p>
                     <p>
