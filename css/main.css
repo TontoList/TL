@@ -1,6 +1,5 @@
 :root {
-    --color-background: linear-gradient(to bottom right, white, gray);
-    --index-background: linear-gradient(to top right, white, gray);
+    --color-background: linear-gradient(to right, white, gray);
     --color-on-background: black;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
@@ -14,8 +13,7 @@
 main.dark,
 header.dark {
     color-scheme: dark;
-    --color-background: linear-gradient(to bottom left, black, gray);
-    --index-background: linear-gradient(to bottom left, black, gray);
+    --color-background: linear-gradient(to right, black, gray);
     --color-on-background: white;
     --color-background-hover: #27262c;
     --color-on-background-hover: white;
