@@ -95,6 +95,7 @@
     text-decoration: underline;
 }
 .page-list .meta {
+    color: var(--color-on-mode);
     display: flex;
     flex-direction: column;
     gap: 2rem;
