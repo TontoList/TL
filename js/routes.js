@@ -9,5 +9,4 @@ export default [
     { path: '/leaderboard', component: Leaderboard },
     { path: '/roulette', component: Roulette },
     { path: '/tontoscalelist', component: TontoScaleList },
-    { path: '/tontoscaleboard', component: TontoScaleLeaderboard },
 ];
