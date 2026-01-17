@@ -24,8 +24,7 @@ export default {
                 <table class="tontoscalelist" v-if="tontoscalelist">
                     <tr v-for="([level, err], i) in tontoscalelist">
                         <td class="rank">
-                            <p v-if="i + 1 <= 75" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p>#{{ i + 1 }}</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
