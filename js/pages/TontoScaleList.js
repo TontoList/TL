@@ -42,9 +42,6 @@ export default {
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
                     <ul class="stats">
                         <li>
-                            <div class="type-title-sm">Points</div>
-                        </li>
-                        <li>
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id || 'NaN' }}</p>
                         </li>
