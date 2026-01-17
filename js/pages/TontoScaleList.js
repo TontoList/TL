@@ -21,8 +21,8 @@ export default {
         </main>
         <main v-else class="page-list">
             <div class="list-container">
-                <table class="tontoscalelist" v-if="tontoscalelist">
-                    <tr v-for="([level, err], i) in tontoscalelist">
+                <table class="list" v-if="list">
+                    <tr v-for="([level, err], i) in list">
                         <td class="rank">
                             <p>#{{ i + 1 }}</p>
                         </td>
@@ -122,7 +122,7 @@ export default {
         </main>
     `,
     data: () => ({
-        tontoscalelist: [],
+        list: [],
         editors: [],
         loading: true,
         selected: 0,
