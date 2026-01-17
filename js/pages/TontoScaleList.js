@@ -21,7 +21,7 @@ export default {
         </main>
         <main v-else class="page-list">
             <div class="list-container">
-                <table class="list" v-if="tontoscalelist">
+                <table class="tontoscalelist" v-if="tontoscalelist">
                     <tr v-for="([level, err], i) in tontoscalelist">
                         <td class="rank">
                             <p v-if="i + 1 <= 75" class="type-label-lg">#{{ i + 1 }}</p>
